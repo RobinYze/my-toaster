@@ -1,0 +1,70 @@
+{
+  "name": "my-toaster",
+  "description": "A lightweight and customizable toast notification library for React apps, built with Tailwind CSS and Framer Motion.",
+  "version": "1.0.0",
+  "type": "module",
+  "author": "Robin Yzewyn",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/my-toaster-umd.cjs",
+  "module": "dist/my-toaster.js",
+  "exports": {
+    ".": {
+      "import": "./dist/my-toaster.js",
+      "require": "./dist/my-toaster-umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RobinYze/my-toaster.git"
+  },
+  "keywords": [
+    "react",
+    "toaster",
+    "toast",
+    "notifications",
+    "framer-motion",
+    "tailwindcss",
+    "animation",
+    "react-component"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@tailwindcss/postcss": "^4.0.17",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.0.0",
+    "framer-motion": "^12.6.2",
+    "lucide-react": "^0.484.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwind-merge": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.37",
+    "@types/react-dom": "^18.2.15",
+    "@typescript-eslint/eslint-plugin": "^6.10.0",
+    "@typescript-eslint/parser": "^6.10.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "eslint": "^8.53.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.4",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^4.0.17",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "vite-plugin-dts": "^3.6.4",
+    "vite-tsconfig-paths": "^4.2.2"
+  },
+  "resolutions": {
+    "jackspeak": "2.1.1"
+  }
+}
