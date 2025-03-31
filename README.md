@@ -14,17 +14,17 @@ A **lightweight**, **fully type-safe** React toast notification library built wi
 
 Using **npm**:
 ```sh
-npm install your-toaster-library
+npm install my-toaster
 ```
 
 Using **pnpm**:
 ```sh
-pnpm add your-toaster-library
+pnpm add my-toaster
 ```
 
 Using **yarn**:
 ```sh
-yarn add your-toaster-library
+yarn add my-toaster
 ```
 
 ---
@@ -35,7 +35,7 @@ yarn add your-toaster-library
 Place the `Toaster` component **once** in your app (usually inside `_app.tsx` or `App.tsx`):
 
 ```tsx
-import { Toaster } from 'your-toaster-library';
+import { Toaster } from 'my-toaster';
 
 function App() {
   return (
@@ -51,7 +51,7 @@ function App() {
 To create a toast notification, call the `toast` function:
 
 ```tsx
-import { toast } from 'your-toaster-library';
+import { toast } from 'my-toaster';
 
 toast({
   type: "success",
