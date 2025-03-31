@@ -20,9 +20,9 @@ export const ToastIcon: React.FC<{
             initial={{ scale: 0.6, opacity: 0.4 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.12, ease: [0.175, 0.885, 0.32, 1.275] }}
-            className="relative min-w-[20px]"
+            className="relative w-4 h-4"
           >
-            <i className='w-4 h-4'><ReactLucideIcon size="20"/></i>
+            <i className='w-4 h-4'><ReactLucideIcon size="16"/></i>
           </motion.div>
         );
       } else {
@@ -37,9 +37,9 @@ export const ToastIcon: React.FC<{
           initial={{ scale: 0.6, opacity: 0.4 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ duration: 0.3, delay: 0.12, ease: [0.175, 0.885, 0.32, 1.275] }}
-          className="relative min-w-[20px]"
+          className="relative w-4 h-4"
         >
-          <i className='w-4 h-4'><IconComponent size="20"/></i>
+          <i className='w-4 h-4'><IconComponent size="16"/></i>
         </motion.div>
       );
     }
@@ -53,7 +53,7 @@ export const ToastIcon: React.FC<{
   }
 
   return (
-    <div className="relative flex justify-center items-center min-w-[20px] min-h-[20px]">
+    <div className="relative flex justify-center items-center w-4 h-4">
       {type === 'loading'
       ? <LucideReact.Loader2 className='animate-spin'/>
       : type === 'error'

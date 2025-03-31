@@ -62,20 +62,23 @@ const ToastBar: React.FC<ToastBarProps> = React.memo(
               damping: 20,
               duration: prefersReducedMotion() ? 0.2 : 0.35,
               backgroundColor: { duration: 0.35 },
+              layout: { duration: 0.35 },
             }}
-            className={`relative flex items-center leading-5 shadow-lg max-w-sm pointer-events-auto py-6 px-4 gap-4 rounded-2xl overflow-hidden min-w-[200px] ${toast.className}`}
+            
+            className={`relative flex items-center leading-5 shadow-lg max-w-sm pointer-events-auto p-4 gap-4 rounded-2xl overflow-hidden ${toast.className}`}
             style={{
               ...style,
               ...toast.style,
               color: toast.type === 'success' || toast.type === 'error' ? 'white' : 'rgb(55 65 81)'
             }}
             {...toast.ariaProps}
+            layout
           >
             <CloseButton toast={toast} />
             <ToastIcon toast={toast} />
             <div className="flex flex-col">
               <p className='font-semibold leading-6 mb-1'>{toast?.title}</p>
-              <p className='text-xs'>{toast?.text}</p>
+              <p className='text-sm'>{toast?.text}</p>
             </div>
             <ProgressBar toast={toast} />
           </motion.div>
