@@ -1,7 +1,7 @@
 {
   "name": "my-toaster",
   "description": "A lightweight and customizable toast notification library for React apps, built with Tailwind CSS and Framer Motion.",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "type": "module",
   "author": "Robin Yzewyn",
   "license": "MIT",
