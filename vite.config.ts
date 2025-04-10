@@ -17,14 +17,15 @@ export default defineConfig({
       fileName: "my-toaster",
     },
     rollupOptions: {
-      external: ["react", "react-dom"],
+      external: ['react', 'react-dom', 'react/jsx-runtime'],
       output: {
         globals: {
           react: "React",
           "react-dom": "ReactDOM",
+          'react/jsx-runtime': 'ReactJsxRuntime',
         },
       },
     },
   },
-  plugins: [react(), dts({ rollupTypes: true })],
+  plugins: [react(), dts({ rollupTypes: true })]
 });
